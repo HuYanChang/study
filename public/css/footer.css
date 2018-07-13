@@ -1,0 +1,99 @@
+footer{
+    width: 100%;
+    font-size: 14px;
+    margin: 0 auto;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    background-color: #ffffff;
+    box-shadow: 0 0 1px;
+    color: rgba(60,60,60,0.5) !important;
+}
+.footer-content{
+    width: 1024px;
+    margin: 0 auto;
+    position: relative;
+}
+.footer-content .last{
+    text-align: right;
+}
+.footer-content ul{
+    list-style-type: none;
+    -webkit-padding-start: unset;
+}
+.footer-content ul li:first-child{
+    margin-top: 20px;
+}
+.footer-content ul li{
+    margin-top: 10px;
+}
+.footer-content .wx{
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+}
+.footer-content img{
+    width: 150px;
+    height: 150px;
+}
+.footer-content .py{
+    margin: 0 auto;
+    text-align: center;
+}
+.footer-content .py dl dd{
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.footer-content .py dl dd a{
+    color: rgba(60,60,60,0.5);
+    cursor: pointer;
+}
+.footer-content .py dl dd a:hover{
+    color: #409eff;
+    cursor: pointer;
+}
+.footer-content a:hover{
+    color: #409eff;
+    cursor: pointer;
+}
+.footer-content .division{
+    border-bottom: 1px solid rgba(60,60,60,0.5);
+}
+.footer-content .publish{
+    margin: 0 auto;
+    align-content: center;
+    text-align: center;
+}
+.to_top{
+    position: fixed;
+    right: 90px;
+    bottom: 350px;
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .3s;
+    box-shadow: 0 0 6px rgba(0,0,0,.12);
+    z-index: 5;
+    opacity: 0;
+}
+.to_top i{
+    color: #409eff;
+    display: block;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+.topFlag{
+    opacity: 1;
+    transition: opacity 1s linear 0s;
+    /* Firefox 4 */
+    -moz-transition:opacity 1s linear 0s;
+    /* Safari and Chrome */
+    -webkit-transition:opacity 1s linear 0s;
+    /* Opera */
+    -o-transition: opacity 1s linear 0s;
+}
+

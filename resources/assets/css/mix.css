@@ -1,0 +1,122 @@
+.mix{
+    margin-top: 40px;
+    font-size: 14px;
+    background-color: rgb(255,255,255);
+    border: 1px solid #dcdfe6;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,.12), 0 0 6px 0 rgba(0,0,0,.04);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.12), 0 0 6px 0 rgba(0,0,0,.04);
+}
+.division{
+    border-bottom: 1px solid #dcdfe6;
+}
+.mix div:last-child .division{
+    border-bottom: unset;
+}
+.mix .img,.news,.video{
+    padding-bottom: 5px;
+}
+.mix .img .img_des{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.mix .img .subinfo .subinfo_u img{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+.mix .img .subinfo .subinfo_u dl dd{
+    display: inline-block;
+    margin-left: unset;
+    margin-right: 10px;
+    align-content: center;
+    text-align: center;
+    float: left;
+}
+.mix .img .subinfo .subinfo_sd dl dd{
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 10px;
+    float: right;
+}
+.mix .news,.video{
+    margin-top: 10px;
+}
+.mix .news .el-col-18{
+    height: 120px;
+}
+.mix .news .ds{
+    height: 120px;
+    width: 519px;
+    display:table-cell;
+    vertical-align:middle;
+}
+.mix .news .ds .subinfo img{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+.mix .news .ds .subinfo .subinfo_u dl dd{
+    margin-left: unset;
+    margin-right: 10px;
+    align-content: center;
+    text-align: center;
+    float: left;
+}
+.mix .news .ds .subinfo .subinfo_sd dl dd{
+    float: right;
+}
+.mix .news .ds .subinfo{
+    height: 20px;
+}
+.mix .news .ds .subinfo .subinfo_sd dl dd{
+    margin-left: 5px;
+    margin-right: 10px;
+    float: right;
+}
+.mix .video img{
+    width: 335px;
+    height: 200px;
+}
+.el-col {
+    border-radius: unset;
+}
+.mix .img img{
+    width: 165px;
+    height: 120px;
+}
+.mix .news img{
+    width: 165px;
+    height: 120px;
+}
+.mix .video .ds .subinfo img{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+.mix .video .ds .subinfo .subinfo_u dl dd{
+    margin-left: unset;
+    margin-right: 10px;
+    align-content: center;
+    text-align: center;
+    float: left;
+}
+.mix .video .ds .subinfo .subinfo_sd{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.mix .video .ds .subinfo .subinfo_sd dl dd{
+    margin-left: 5px;
+    margin-right: 10px;
+    float: right;
+}
+.grid-content[data-v-7ab59768]{
+    border-radius: unset;
+}
+.grid-content {
+    border-radius: 4px;
+    min-height: 36px;
+}
+.clear{
+    clear: both;
+}

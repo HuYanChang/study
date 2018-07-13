@@ -1,0 +1,9 @@
+@extends('layout.public')
+@section('title','首页')
+@section('style')
+@stop
+@section('content')
+    {{--<router-view></router-view>--}}
+@stop
+@section('script_footer')
+@stop
