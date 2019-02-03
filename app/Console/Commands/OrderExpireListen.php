@@ -3,6 +3,8 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
+use App\Model\Order;
+use Illuminate\Support\Facades\Redis;
 
 class OrderExpireListen extends Command
 {
@@ -38,5 +40,23 @@ class OrderExpireListen extends Command
     public function handle()
     {
         //
+        $cachedb = config('database.redis.cache.database', 0);
+        $pattern = '__keyevent@'.$cachedb.'__:expired';
+        Redis::subscribe($pattern, function ($channel){
+            $keyType = str_before($channel, ':');
+            switch ($keyType){
+                case 'ORDER_CONFIRM':
+                    $orderId = str_after($channel, ':');
+                    $order = Order::find($orderId);
+                    if($order){
+                        $order->cancal(); //取消操作
+                    }
+                    break;
+                case 'ORDER_OTHERVENT':
+                    break;
+                default:
+                    break;
+            }
+        });
     }
 }
