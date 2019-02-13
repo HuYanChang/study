@@ -17,3 +17,4 @@ _ide_helper_models.php
 .phpstorm.meta.php
 composer.json
 composer.lock
+config/database.php
